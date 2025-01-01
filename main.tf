@@ -26,7 +26,7 @@ resource "azurerm_resource_group" "rg" {
   location = "East US"
 }
 
-resource "azurerm_storage_account" "storage2dem" {
+resource "azurerm_storage_account" "storage" {
   name                     = "stgrdemo"
   location                 = azurerm_resource_group.rg.location
   resource_group_name      = azurerm_resource_group.rg.name
@@ -34,7 +34,7 @@ resource "azurerm_storage_account" "storage2dem" {
   account_replication_type = "RAGRS"
 }
 
-resource "azurerm_storage_account" "storage" {
+resource "azurerm_storage_account" "stgrdemo2" {
   name                     = "stgrdemo2"
   location                 = azurerm_resource_group.rg.location
   resource_group_name      = azurerm_resource_group.rg.name
